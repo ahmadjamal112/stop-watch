@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+<div class="stopwatch">
+  <h1 id="display">00:00:00</h1>
+
+  <div class="buttons">
+    <button onclick="start()">▶️ Start</button>
+    <button onclick="stop()">⏸️ Stop</button>
+    <button onclick="reset()">🔄 Reset</button>
+    <button onclick="saveLap()">🏁 Save Lap</button>
+    <button onclick="showHistory()">📜 Show History</button>
+  </div>
+
+  <div class="input-group">
+    <input type="text" id="lapName" placeholder="Enter Lap Name (Optional)">
+  </div>
+
+  <div class="laps" id="laps">
+    <h2>🏁 Laps:</h2>
+    <ul id="lapList"></ul>
+  </div>
+
+  <div class="history" id="history" style="display: none;">
+    <h2>📜 Saved History:</h2>
+    <ul id="historyList"></ul>
+  </div>
+</div>
+
+
+</body>
+<script src="/index.js"></script>
+</html>
